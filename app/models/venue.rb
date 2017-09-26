@@ -1,6 +1,8 @@
 class Venue < ApplicationRecord
   # Direct associations
 
+  belongs_to :neighborhood
+
   has_many   :menus,
              :dependent => :destroy
 
